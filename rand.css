@@ -1,0 +1,32 @@
+body {
+	background-image: url(bg.png);
+	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+	-moz-background-size:100% 100%;
+	background-size:100% 100%;
+}
+div.content {
+}
+
+div.center {
+	text-align: center;
+}
+
+img.logo {
+	height: 100px;
+}
+
+.guess {
+	font-size: 88px;
+}
+
+.box {
+	margin: 40px;
+}
+span.card {
+	background-image: url(card.png);
+	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+	-moz-background-size:100% 100%;
+	background-size:100% 100%;
+	font-size: 88px;
+	padding: 30px;
+}
