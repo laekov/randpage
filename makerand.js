@@ -15,15 +15,13 @@
 	};
 	var displayInt = function(x) {
 		var biti = 0;
-		while (x > 0) {
+		for (; x > 0; ++ biti) {
 			var bit = x % 10;
 			$('#dig' + biti).html(bit);
 			x = Math.floor(x / 10);
-			++ biti;
 		}
-		while (biti < 1) {
+		for (; biti < 2; ++ biti) {
 			$('#dig' + biti).html('0');
-			++ biti;
 		}
 	};
 	var animating = false;
@@ -42,8 +40,7 @@
 		});
 		setInterval(function() {
 			if (animating) {
-				trick('#dig0');
-				trick('#dig1');
+				displayInt(randInt(getInt('#count')) + 1);
 			}
 		}, 100);
 	});
